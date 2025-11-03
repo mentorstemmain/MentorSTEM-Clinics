@@ -1,0 +1,51 @@
+import tkinter as tk
+import sys
+
+class ConsoleRedirector:
+    def __init__(self, text_widget):
+        self.text_widget = text_widget
+    
+    def write(self, text):
+        self.text_widget.insert(tk.END, text)
+        self.text_widget.see(tk.END)
+
+def gameScreen():
+    title.config(text="Character Stats Screen", font=('Times New Roman', 20))
+    label.pack_forget()
+    button.pack_forget()
+    output_console = tk.Text(window, wrap="word", height=400, width=700)
+    output_console.pack()
+    sys.stdout = ConsoleRedirector(output_console)
+
+    '''
+    Declare variables of the character's name, class, health points, attack power,
+    if the character has a pet or not, and their favorite skill/spell to use.
+    '''
+    # IMPLEMENT HERE
+
+    '''
+    Print a character stats sheet of the character you made above! Be creative
+    and don't be afriad to add emojis if you want (don't forget str())
+    '''
+    # IMPLEMENT HERE
+
+    '''
+    CHALLENGE! (Week 2 topics!!!)
+    - create a function! (hint: the code you made up above is in the gameScreen() function)
+        - try to reason your way into making a function
+        - this function can be very simple (such as using print)
+        - if you want, try learning if-else statements and such!
+    '''
+    # IMPLEMENT HERE
+
+window = tk.Tk()
+window.geometry("800x500")
+window.title("Adventure Game")
+title = tk.Label(window, text="Adventure Game!", font=('Times New Roman', 30))
+title.pack(padx=20, pady=20)
+label = tk.Label(window, text="This is an adventure game! See where you journey will go.", font=('Helvetica', 10))
+label.pack()
+button = tk.Button(window, text="Start!", font=('Arial', 20), command=gameScreen)
+button.pack(pady=30)
+
+window.mainloop()
