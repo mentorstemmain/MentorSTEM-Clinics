@@ -33,8 +33,10 @@ def gameScreen():
     CHALLENGE! (Week 2 topics!!!)
     - create a function! (hint: the code you made up above is in the gameScreen() function)
         - try to reason your way into making a function
-        - this function can be very simple (such as using print)
+        - this function can be very simple (such as using print, if you are, it will appear on the stats page)
         - if you want, try learning if-else statements and such!
+    - call the function so you can run the code you made!
+        - remember to call if after you "declare" it so that the compiler knows what you mean
     '''
     # IMPLEMENT HERE
 
@@ -47,5 +49,6 @@ label = tk.Label(window, text="This is an adventure game! See where you journey 
 label.pack()
 button = tk.Button(window, text="Start!", font=('Arial', 20), command=gameScreen)
 button.pack(pady=30)
+
 
 window.mainloop()
