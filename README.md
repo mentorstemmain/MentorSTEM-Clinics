@@ -1,2 +1,2 @@
-# Week1
-MentorSTEM Clinic Week1 Content
+# MentorSTEM Clinics
+MentorSTEM Clinic Contents (In class assignments, homework projects)
