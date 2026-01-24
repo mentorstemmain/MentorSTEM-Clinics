@@ -1,15 +1,12 @@
-response = input("Welcome to the treasure game? Would you like to begin? (Y/N) ")
+# Your task is to create a treasure game (with limited options)
+# Look to the example for inspiration or follow the guide lines below!
 
-while (response == "Y"):
-    choice = input("Which direction would you like to head to next? (Up/Down/Left/Right) ")
-    if (choice == "Up"):
-        print("Congrats! You reached the treasure!")
-    if (choice == "Down"):
-        print("Uh oh! You met monsters on this route. Game over!")
-    if (choice == "Left"):
-        print("Whoops! This route is blocked by some rubbage.")
-    if (choice == "Right"):
-        print("Oh no! This route is filled with a poisonous gas! Best to leave.")
-    response = input("Would you like to play again? (Y/N) ")
+# Create a variable and use input() to save the user's answer to a question
+# that asks if they would like to start the game
 
-print("Thank you for playing!")
+# Use a while loop to run if the user response variable is equal to yes/Y/etc
+# Within the while loop, save the user's choice for movement (left/right/etc)
+# Use if-else or if statements to print the result
+# Ask the user if they want to continue playing and save result to response variable
+
+# Print a last comment for the user who played the game!
