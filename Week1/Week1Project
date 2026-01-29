@@ -6,12 +6,12 @@ import tkinter as tk
 Create variables for each player (health, player type,
 experience points, player username, and if the player has a weapon)
 '''
-# IMPLEMENT HERE
+# PUT CODE HERE
 
 '''
 Code four different statements that print the four variables above
 '''
-# IMPLEMENT HERE
+# PUT CODE HERE
 
 '''
 Create four (or more) strings (stored in variables) of your adventure game story!
@@ -19,7 +19,8 @@ Essentially, make a story about the character you defined above.
 You should use all variables in the creation of your three string variables
 PSST: Don't forget str()
 '''
-# IMPLEMENT HERE
+# PUT CODE HERE
+
 story1 = ""
 story2 = ""
 story3 = ""
@@ -43,5 +44,6 @@ label = tk.Label(window, text="This is an adventure game! See where you journey 
 label.pack()
 button = tk.Button(window, text="Start Game", font=('Arial', 20), command=gameScreen)
 button.pack(pady=30)
+
 
 window.mainloop()
