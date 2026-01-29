@@ -1,1 +1,23 @@
+playerHealth = 100
 
+response = input("Would you like to play? (Y/N)")
+
+while(response == "Y"):
+    choice = input("Which direction would you like to head to next? (Up/Down/Left/Right) ")
+    if (choice == "Up"):
+        print("Congrats! You reached the treasure!")
+        print("Your health was: " + str(playerHealth))
+    if (choice == "Down"):
+        print("Uh oh! You met monsters on this route. Game over!")
+        playerHealth = playerHealth - 80
+        print("Your health was: " + str(playerHealth))
+    if (choice == "Left"):
+        print("Whoops! This route is blocked by some rubbage.")
+        print("Your health was: " + str(playerHealth))
+    if (choice == "Right"):
+        print("Oh no! This route is filled with a poisonous gas! Best to leave.")
+        playerHealth = playerHealth - 30
+        print("Your health was: " + str(playerHealth))
+    response = input("Would you like to continue playing? (Y/N)")
+
+print("Thank you for playing!")
