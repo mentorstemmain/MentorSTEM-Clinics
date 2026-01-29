@@ -1,1 +1,3 @@
-
+playerName = "BestPlayerEver!"
+playerHealth = 100
+print (playerName + " has logged onto the game. This player's health is " + playerHealth + " points")
