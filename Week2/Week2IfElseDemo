@@ -1,0 +1,14 @@
+playerPt = int(input("How many points do you have?"))
+
+if (playerPt > 80):
+    print("You are a pro at this game!")
+
+if (playerPt > 60):
+    print("You're pretty cool!")
+
+if (playerPt == 0):
+    print("Uh oh! Get your points up!")
+elif (playerPt < 0):
+    print("Error!")
+else:
+    print("Your points are valid")
