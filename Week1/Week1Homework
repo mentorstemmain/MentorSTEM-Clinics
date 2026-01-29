@@ -21,13 +21,13 @@ def gameScreen():
     Declare variables of the character's name, class, health points, attack power,
     if the character has a pet or not, and their favorite skill/spell to use.
     '''
-    # IMPLEMENT HERE
+    # PUT CODE HERE
 
     '''
     Print a character stats sheet of the character you made above! Be creative
     and don't be afriad to add emojis if you want (don't forget str())
     '''
-    # IMPLEMENT HERE
+    # PUT CODE HERE
 
     '''
     CHALLENGE! (Week 2 topics!!!)
@@ -38,7 +38,7 @@ def gameScreen():
     - call the function so you can run the code you made!
         - remember to call if after you "declare" it so that the compiler knows what you mean
     '''
-    # IMPLEMENT HERE
+    # PUT CODE HERE
 
 window = tk.Tk()
 window.geometry("800x500")
@@ -52,3 +52,4 @@ button.pack(pady=30)
 
 
 window.mainloop()
+
