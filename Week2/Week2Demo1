@@ -1,0 +1,7 @@
+verb = "ran"
+subject = "cat"
+print("The " + subject + " " + verb + " really well!")
+
+verb = input("Insert a past-tense verb!")
+subject = input("Insert the subject!")
+print("The " + subject + " " + verb + " really well!")
