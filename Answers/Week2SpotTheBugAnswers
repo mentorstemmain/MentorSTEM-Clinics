@@ -1,0 +1,12 @@
+# Hint! There are TWO bugs
+
+playerType = input("What is the player type (Wizard, Swordsman, etc.)?")
+DEFAULT_HEALTH = 100
+playerHealth = int(input("How much health, out of 100 points, does the player have?"))
+
+if(playerHealth < 0):
+    print("Not valid!")
+elif(playerHealth == 100):
+    print("Wow! Super health!")
+
+print(playerType + " has " + str(playerHealth) + "/" + str(DEFAULT_HEALTH) + " health points.")
