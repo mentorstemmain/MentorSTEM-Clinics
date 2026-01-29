@@ -25,20 +25,16 @@ def gameScreen():
 
     '''
     Print a character stats sheet of the character you made above! Be creative
-    and don't be afriad to add emojis if you want (don't forget str())
+    and don't be afriad to add emojis if you want (don't forget this function --> str())
     '''
     # PUT CODE HERE
 
     '''
     CHALLENGE! (Week 2 topics!!!)
-    - create a function! (hint: the code you made up above is in the gameScreen() function)
-        - try to reason your way into making a function
-        - this function can be very simple (such as using print, if you are, it will appear on the stats page)
-        - if you want, try learning if-else statements and such!
-    - call the function so you can run the code you made!
-        - remember to call if after you "declare" it so that the compiler knows what you mean
+    - Isn't it annoying having to declare the values in the code?
+    - What about user input?
+    - Hint: Search up how to use input() ... and use it in this code!
     '''
-    # PUT CODE HERE
 
 window = tk.Tk()
 window.geometry("800x500")
@@ -52,4 +48,5 @@ button.pack(pady=30)
 
 
 window.mainloop()
+
 
