@@ -1,1 +1,7 @@
+# Build upon the code from your project!
+# Make player-specific variables (like health points, etc) that decrease or increase upon a certain choice
 
+# CHALLENGE:
+# Isn't it annoying having to restart to play the game?
+# Don't you want to play multiple rounds?
+# Try learning while loops... and implement them!
