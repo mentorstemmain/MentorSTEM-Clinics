@@ -1,15 +1,11 @@
-response = input("Welcome to the treasure game? Would you like to begin? (Y/N) ")
-
-while (response == "Y"):
-    choice = input("Which direction would you like to head to next? (Up/Down/Left/Right) ")
-    if (choice == "Up"):
-        print("Congrats! You reached the treasure!")
-    if (choice == "Down"):
-        print("Uh oh! You met monsters on this route. Game over!")
-    if (choice == "Left"):
-        print("Whoops! This route is blocked by some rubbage.")
-    if (choice == "Right"):
-        print("Oh no! This route is filled with a poisonous gas! Best to leave.")
-    response = input("Would you like to play again? (Y/N) ")
+choice = input("Which direction would you like to head to next? (Up/Down/Left/Right) ")
+if (choice == "Up"):
+    print("Congrats! You reached the treasure!")
+if (choice == "Down"):
+    print("Uh oh! You met monsters on this route. Game over!")
+if (choice == "Left"):
+    print("Whoops! This route is blocked by some rubbage.")
+if (choice == "Right"):
+    print("Oh no! This route is filled with a poisonous gas! Best to leave.")
 
 print("Thank you for playing!")
