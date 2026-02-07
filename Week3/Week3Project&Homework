@@ -1,0 +1,8 @@
+# Create a pet simulation game (refer to the example if you need an idea of how it will work)!
+# First create three lists (one for pet names, one for the health level of each pet, and one for the energy level of each pet)
+# Then ask the user if they want to start the game
+# Use this input to start a while loop that loops one round of the simulation
+# Within each round, the user must be able to play or feed the pets HOW MANY TIMES THEY WANT to WHICHEVER PET THEY WANT
+# Ask the user if they want to continue playing, if not “break” out of the while loop
+
+# Challenge section!: Explore Gamemaker (the platform where we'll learn video game development) & make this pet simulation game as realistic as possible!
