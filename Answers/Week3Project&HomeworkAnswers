@@ -1,0 +1,62 @@
+# Creating a pet simulation game
+pets = ["Sally", "Holly", "Molly"]
+petsAge = [7, 6, 10]
+petsHealth = [0, 0, 0]
+petsEnergy = [100, 100, 100]
+petsType = ["Horse", "Dog", "Fish"]
+
+# Using a while loop create a "day"/cycle of playing this game using user input for the base case
+userInput = input("Would you like to start playing? (Y/N)")
+
+if (userInput == "Y") :
+    # Feeding pets while loop
+    userInput2 = input("Would you like to start feeding your pets? (Y/N)")
+    while (userInput2 == "Y") :
+        p1 = input("Which pet would you like to feed?")
+        index = 0
+        for x in pets :
+            if (x == p1) :
+                if (petsHealth[index] < 100) :
+                    petsHealth[index] += 30
+                    print("Pet fed successfully!")
+                else :
+                    print("The pet is too full. Try again later.")
+            index += 1
+        userInput2 = input("Would you like to continue feeding your pets? (Y/N)")
+    
+    # Playing with pets while loop
+    userInput3 = input("Would you like to start playing with your pets? (Y/N)")
+    while (userInput3 == "Y") :
+        p1 = input("Which pet would you like to play with?")
+        index = 0
+        for y in pets :
+            if (y == p1) :
+                if (petsEnergy[index] == 0) :
+                    print("The pet is too tired. Try again later.")
+                else :
+                    petsEnergy[index] -= 20
+                    print("Pet was played with successfully!")
+            index += 1
+        userInput3 = input("Would you like to start playing with your pets? (Y/N)")
+    
+    # Updating statuses after going to bed
+    index = 0
+    print("Putting pets to bed...Zzz")
+    a = 0
+    while (a < len(pets)) :
+        if (petsEnergy[a] < 100) :
+            petsEnergy[a] += 10
+        petsHealth[a] -= 10
+        a += 1
+
+    # Summary
+    print("Here is today's summary!")
+    print(pets)
+    print(petsHealth)
+    print(petsEnergy)
+    
+    # Checking while loop case
+    userInput = input("The day has ended. Would you like to continue? (Y/N)")
+
+# Ending statement
+print("Thank you for playing!")
